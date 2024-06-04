@@ -85,6 +85,49 @@ figure img {
   font-weight: 500;
 }
 
+footer {
+  display: grid;
+  grid-template-columns: repeat(5, min-width);
+  background-color: rgb(52, 52, 52);
+  color: #fff;
+  padding-top: 2.5rem;
+  padding-bottom: 8rem;
+}
+
+.footer-nav {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  text-align: flex-start;
+  font-family: "Open Sans";
+}
+
+.footer-address {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  text-align: flex-start;
+  font-family: "Open Sans";
+}
+
+.footer-socials {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  align-items: flex-start;
+  font-family: "Open Sans";
+}
+
+footer h3 {
+  font-size: 1.5rem;
+  font-family: "Roboto";
+  padding-bottom: 0.5rem;
+}
+footer p {
+  font-size: 0.9rem;
+}
+
+footer img {
+  width: 7%;
+}
+
 @media screen and (max-width: 475px) {
   .poster-list {
     grid-template-columns: 1fr;
