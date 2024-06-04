@@ -19,10 +19,10 @@ img {
 
 .poster {
   flex: 1;
-  color: #fff;
+  color: red;
 }
 
-article {
+.poster-data {
   display: flex;
   flex-direction: column;
   gap: 1rem;
