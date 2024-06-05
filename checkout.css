@@ -73,14 +73,21 @@ h3 {
   display: grid;
   grid-template-columns: 50% 40% 10%;
   width: 100%;
+  grid-template-areas:
+    " a a a"
+    " b b b"
+    " c c c";
 }
 
 .red-bg {
+  grid-area: "a";
   background-color: rgba(139, 0, 0, 0.338);
 }
 
-.item-list p:nth-of-type(3) {
-  padding-left: 2.5rem;
+.item-list p:nth-child(3) {
+  display: grid;
+  place-items: end;
+  padding-right: 2.5rem;
 }
 .item-list p:nth-of-type(6),
 .item-list p:nth-of-type(9) {
