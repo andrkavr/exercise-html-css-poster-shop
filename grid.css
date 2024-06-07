@@ -4,11 +4,26 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  min-width: 280px;
+}
+
 header {
   background-color: #000;
+  position: relative;
 }
+
 header img {
   width: 100%;
+}
+
+.burger {
+  z-index: 10;
+  position: absolute;
+  top: 4%;
+  left: 2%;
+  width: 2%;
 }
 
 .poster-list {
@@ -53,7 +68,7 @@ figure img {
 
 .poster button,
 .highlight button {
-  background-color: rgb(211, 58, 58);
+  background-color: #e83f57;
   color: #fff;
   border-radius: 5px;
   max-width: 50%;
@@ -134,7 +149,7 @@ footer p {
 }
 
 footer img {
-  width: 7%;
+  width: 6%;
 }
 
 footer img:hover {
